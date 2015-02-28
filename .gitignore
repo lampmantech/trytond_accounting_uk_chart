@@ -4,6 +4,7 @@
 *.so
 
 # Packages
+Makefile
 *.egg
 *.egg-info
 dist
