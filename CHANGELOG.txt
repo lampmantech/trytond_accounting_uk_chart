@@ -1,3 +1,8 @@
+commit 6a50bf22eef017fa6e264c651171fdb94df2c892
+Date:   Thu Mar 3 17:59:25 2016 +0200
+
+    Added smartmode chart from openerp-7.0-20140125-002455
+
 commit de6316dda45b464996fc8ffd54cb98e11301ded9
 Date:   Sat Feb 28 21:15:29 2015 +0200
 
