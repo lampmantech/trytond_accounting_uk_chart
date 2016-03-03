@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tryton>
+  <data>
+    <record model="account.tax.code.template" id="tax_code_uk">
+      <field name="name">UK HMRC VAT</field>
+      <field ref="root_uk" name="account"/>
+    </record>
+    <record model="account.tax.code.template" id="4">
+      <field name="name">Net VAT to be paid or reclaimed</field>
+      <field ref="root_uk" name="account"/>
+      <field ref="tax_code_uk" name="parent"/>
+      <field name="code">4</field>
+    </record>
+    <record model="account.tax.code.template" id="5">
+      <field name="name">Total value of sales ex VAT (box 8 included)</field>
+      <field ref="root_uk" name="account"/>
+      <field ref="tax_code_uk" name="parent"/>
+      <field name="code">5</field>
+    </record>
+    <record model="account.tax.code.template" id="6">
+      <field name="name">Total value of purchases ex VAT</field>
+      <field ref="root_uk" name="account"/>
+      <field ref="tax_code_uk" name="parent"/>
+      <field name="code">6</field>
+    </record>
+    <record model="account.tax.code.template" id="8">
+      <field name="name">Total value of EC purchases ex VAT</field>
+      <field ref="root_uk" name="account"/>
+      <field ref="tax_code_uk" name="parent"/>
+      <field name="code">8</field>
+    </record>
+    <record model="account.tax.code.template" id="1">
+      <field name="name">VAT on Sales and other outputs</field>
+      <field ref="root_uk" name="account"/>
+      <field ref="4" name="parent"/>
+      <field name="code">1</field>
+    </record>
+    <record model="account.tax.code.template" id="2">
+      <field name="name">VAT on acquisitions from other EC Member states</field>
+      <field ref="root_uk" name="account"/>
+      <field ref="4" name="parent"/>
+      <field name="code">2</field>
+    </record>
+    <record model="account.tax.code.template" id="3">
+      <field name="name">VAT reclaimed on purchases (EC included)</field>
+      <field ref="root_uk" name="account"/>
+      <field ref="4" name="parent"/>
+      <field name="code">3</field>
+    </record>
+    <record model="account.tax.code.template" id="7">
+      <field name="name">Total value of EC sales ex VAT</field>
+      <field ref="root_uk" name="account"/>
+      <field ref="5" name="parent"/>
+      <field name="code">7</field>
+    </record>
+    <record model="account.tax.group" id="tax_group_sale">
+      <field name="name">VAT on Sales</field>
+      <field name="code">VAT on Sales</field>
+      <field name="kind">sale</field>
+    </record>
+    <record model="account.tax.group" id="tax_group_purchase">
+      <field name="name">VAT on Purchases</field>
+      <field name="code">VAT on Purchases</field>
+      <field name="kind">purchase</field>
+    </record>
+    <record model="account.tax.group" id="tax_group_both">
+      <field name="name">VAT on Sales and Purchases</field>
+      <field name="code">VAT on Sales and Purchases</field>
+    </record>
+  <record model="account.tax.template" id="ST0">
+      <field name="name">Zero rated sales</field>
+      <field name="description">ST0</field>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.00')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '5')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '1')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '5')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '1')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_sale" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="ST1">
+      <field name="name">Standard rate sales (17.5%)</field>
+      <field name="description">ST1</field>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.17')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '5')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '1')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '5')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '1')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_sale" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="ST2">
+      <field name="name">Exempt sales</field>
+      <field name="description">ST2</field>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.00')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '5')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '1')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '5')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '1')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_sale" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="PT0">
+      <field name="name">Zero rated purchases</field>
+      <field name="description">PT0</field>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.00')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_purchase" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="PT1">
+      <field name="name">Standard rate purchases (17.5%)</field>
+      <field name="description">PT1</field>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.17')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_purchase" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="PT2">
+      <field name="name">Exempt purchases</field>
+      <field name="description">PT2</field>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.00')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_purchase" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="PT8">
+      <field name="name">Standard rated purchases from EC</field>
+      <field name="description">PT8</field>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.17')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '8')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '2')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '8')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '2')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_purchase" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="PT8R">
+      <field name="name">Reverse EC Purchase VAT</field>
+      <field name="description">PT8R</field>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('-1.00')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="-1"/>
+      <field name="invoice_base_sign" eval="-1"/>
+      <field name="credit_note_base_sign" eval="1"/>
+      <field name="credit_note_tax_sign" eval="1"/>
+      <field ref="PT8" name="parent"/>
+      <field ref="tax_group_purchase" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="PT5">
+      <field name="name">Lower rate purchases (5%)</field>
+      <field name="description">PT5</field>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.05')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_purchase" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="ST4">
+      <field name="name">Sales to customers in EC</field>
+      <field name="description">ST4</field>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.00')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '7')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '7')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_sale" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="PT7">
+      <field name="name">Zero rated purchases from EC</field>
+      <field name="description">PT7</field>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.00')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '8')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '8')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_purchase" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="ST11">
+      <field name="name">Standard rate sales (20%)</field>
+      <field name="description">ST11</field>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2200')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.20')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '5')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '1')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '5')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '1')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_sale" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.template" id="PT11">
+      <field name="name">Standard rate purchases (20%)</field>
+      <field name="description">PT11</field>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="invoice_account"/>
+      <field search="[('code', '=', '2201')]" model="account.account.template" name="credit_note_account"/>
+      <field name="rate" eval="Decimal('0.20')"/>
+      <field name="type">percentage</field>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="invoice_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="invoice_tax_code"/>
+      <field name="invoice_tax_sign" eval="1"/>
+      <field name="invoice_base_sign" eval="1"/>
+      <field search="[('code', '=', '6')]" model="account.tax.code.template" name="credit_note_base_code"/>
+      <field search="[('code', '=', '3')]" model="account.tax.code.template" name="credit_note_tax_code"/>
+      <field name="credit_note_base_sign" eval="-1"/>
+      <field name="credit_note_tax_sign" eval="-1"/>
+      <field ref="tax_group_purchase" name="group"/>
+      <field ref="root_uk" name="account"/>
+      <field name="start_date">1971-01-01</field>
+    </record>
+    <record model="account.tax.rule.template" id="tax_rule_uk_no_id_purchase">
+            <field name="name">UK No ID Purchase</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_uk_vat_id_purchase">
+            <field name="name">UK VAT-ID purchase</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_eu_no_id_purchase">
+            <field name="name">EU No ID Purchase</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_eu_vat_id_purchase">
+            <field name="name">EU VAT-ID purchase</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_non_eu_purchase">
+            <field name="name">Non EU purchase</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">purchase</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_uk_vat_id_sale">
+            <field name="name">UK VAT-ID sale</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_uk_no_id_sale">
+            <field name="name">UK No ID Sale</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_eu_vat_id_sale">
+            <field name="name">EU VAT-ID sale</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_eu_no_id_sale">
+            <field name="name">EU No ID Sale</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">sale</field>
+        </record>
+        <record model="account.tax.rule.template" id="tax_rule_non_eu_sale">
+            <field name="name">Non EU Sale</field>
+            <field name="account" model="account.account.template" search="[('code', '=', 'root_uk')]"/>
+            <field name="kind">sale</field>
+        </record>
+	</data>
+</tryton>

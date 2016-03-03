@@ -1,0 +1,9 @@
+commit de6316dda45b464996fc8ffd54cb98e11301ded9
+Date:   Sat Feb 28 21:15:29 2015 +0200
+
+    Renamed module to trytond_accounting_uk_chart
+
+commit c95103f9caa15df45dfbe29cff1ff2b01006d92e
+Date:   Mon Oct 7 12:43:51 2013 -0700
+
+    Initial commit

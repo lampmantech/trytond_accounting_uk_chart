@@ -1,0 +1,20 @@
+<tryton>
+  <data>
+    <!-- these id values are hardwired into the converter -->
+    <record model="account.tax.group" id="tax_group_sale">
+      <field name="name">VAT on Sales</field>
+      <field name="code">VAT on Sales</field>
+      <field name="kind">sale</field>
+    </record>
+    <record model="account.tax.group" id="tax_group_purchase">
+      <field name="name">VAT on Purchases</field>
+      <field name="code">VAT on Purchases</field>
+      <field name="kind">purchase</field>
+    </record>
+    <!-- unused: 'type_tax_use': 'all' in Oerp7 -->
+    <record model="account.tax.group" id="tax_group_both">
+      <field name="name">VAT on Sales and Purchases</field>
+      <field name="code">VAT on Sales and Purchases</field>
+    </record>
+  </data>
+</tryton>
