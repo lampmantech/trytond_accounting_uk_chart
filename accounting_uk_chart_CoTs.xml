@@ -39,25 +39,25 @@
     <record model="account.tax.code.template" id="hmrc_form100_1">
       <field name="name">VAT on Sales and other outputs</field>
       <field ref="root_uk" name="account"/>
-      <field ref="4" name="parent"/>
+      <field ref="hmrc_form100_4" name="parent"/>
       <field name="code">1</field>
     </record>
     <record model="account.tax.code.template" id="hmrc_form100_2">
       <field name="name">VAT on acquisitions from other EC Member states</field>
       <field ref="root_uk" name="account"/>
-      <field ref="4" name="parent"/>
+      <field ref="hmrc_form100_4" name="parent"/>
       <field name="code">2</field>
     </record>
     <record model="account.tax.code.template" id="hmrc_form100_3">
       <field name="name">VAT reclaimed on purchases (EC included)</field>
       <field ref="root_uk" name="account"/>
-      <field ref="4" name="parent"/>
+      <field ref="hmrc_form100_4" name="parent"/>
       <field name="code">3</field>
     </record>
     <record model="account.tax.code.template" id="hmrc_form100_7">
       <field name="name">Total value of EC sales ex VAT</field>
       <field ref="root_uk" name="account"/>
-      <field ref="5" name="parent"/>
+      <field ref="hmrc_form100_5" name="parent"/>
       <field name="code">7</field>
     </record>
     <!-- account.tax.group -->
