@@ -821,7 +821,7 @@
       <field ref="4000" name="parent"/>
     </record>
     <record model="account.account.template" id="4011">
-      <field name="name">Sales of Computers</field>
+      <field name="name">Sales of Shares</field>
       <field name="code">4011</field>
       <field ref="account_type_income" name="type"/>
       <field name="kind">revenue</field>
