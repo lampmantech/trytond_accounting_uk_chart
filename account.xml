@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <record model="ir.ui.view" id="print_abbrev_accts_start_view_form">
+            <field name="model">accounting_uk_chart.print_abbrev_accts.start</field>
+            <field name="type">form</field>
+            <field name="name">print_abbrev_accts_start_form</field>
+        </record>
+
+        <record model="ir.action.wizard" id="wizard_print_abbrev_accts">
+            <field name="name">Print Abbrev Accts</field>
+            <field name="wiz_name">accounting_uk_chart.print_abbrev_accts</field>
+        </record>
+        <menuitem name="Print Abbrev Accts"
+		  parent="account.menu_reporting"
+		  action="wizard_print_abbrev_accts"
+		  id="menu_print_abbrev_accts"
+		  icon="tryton-print"/>
+
+        <record model="ir.action.report" id="report_abbrev_accts">
+            <field name="name">Abbrev Accts</field>
+            <field name="model"></field>
+            <field name="report_name">accounting_uk_chart.abbrev_accts</field>
+            <field name="report">accounting_uk_chart/abbrev_accts.odt</field>
+        </record>
+
+    </data>
+</tryton>

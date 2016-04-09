@@ -11,6 +11,15 @@ import ConfigParser
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+def get_require_version(name):
+    if minor_version % 2:
+        require = '%s >= %s.%s.dev0, < %s.%s'
+    else:
+        require = '%s >= %s.%s, < %s.%s'
+    require %= (name, major_version, minor_version,
+        major_version, minor_version + 1)
+    return require
+
 config = ConfigParser.ConfigParser()
 config.readfp(open('tryton.cfg'))
 info = dict(config.items('tryton'))
@@ -31,8 +40,8 @@ requires.append('trytond >= %s.%s' %
 
 setup(name='trytond_accounting_uk_chart',
     version=info.get('version', '0.0.1'),
-    description='Tryton module for UK chart of accounts',
-    long_description=read('README.md'),
+    description='Tryton module for UK chart of accounts ',
+    long_description=read('README.creole'),
     author='Lampman Tech',
     url='https://github.com/lampmantech/trytond_accounting_uk_chart',
     download_url=("git://github.com/lampmantech/trytond_accounting_uk_chart.git"),
@@ -42,10 +51,10 @@ setup(name='trytond_accounting_uk_chart',
         ],
     package_data={
         'trytond.modules.accounting_uk_chart': (info.get('xml', [])
-            + ['tryton.cfg']),
+            + ['tryton.cfg', 'view/*.xml', '*.odt',]),
         },
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         'Environment :: Plugins',
         'Framework :: Tryton',
         'Intended Audience :: Developers',

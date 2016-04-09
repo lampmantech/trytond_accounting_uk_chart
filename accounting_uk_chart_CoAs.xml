@@ -71,7 +71,7 @@
       <field ref="uk" name="parent"/>
     </record>
     <record model="account.account.template" id="root_uk">
-      <field name="name">Lampman Account Schema</field>
+      <field name="name">UK Account Schema</field>
       <field name="kind">view</field>
       <field ref="uk" name="type"/>
       <field name="code">root_uk</field>
@@ -192,7 +192,7 @@
       <field ref="A020" name="parent"/>
     </record>
     <record model="account.account.template" id="0060">
-      <field name="name">Office equipment (inc computer equipment)</field>
+      <field name="name">Office equipment</field>
       <field name="code">0060</field>
       <field ref="account_type_fixed_assets" name="type"/>
       <field name="kind">other</field>
@@ -200,7 +200,7 @@
       <field ref="A020" name="parent"/>
     </record>
     <record model="account.account.template" id="0061">
-      <field name="name">Office equipment (inc computer equipment) Depreciation</field>
+      <field name="name">Office equipment Depreciation</field>
       <field name="code">0061</field>
       <field ref="account_type_fixed_assets" name="type"/>
       <field name="kind">other</field>

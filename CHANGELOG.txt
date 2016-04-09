@@ -1,3 +1,13 @@
+commit 8dde7003de405a502d7a879d8693e18ca4e5514f
+Date:   Wed Mar 16 20:01:52 2016 +0200
+
+    added Sales of Shares
+
+commit 2a95b978b0197a17e005307caab05c17237ab5a9
+Date:   Sat Mar 12 00:08:24 2016 +0200
+
+    Added account 8801 for Corp Tax refunds as revenue
+
 commit dc3454a40ba48da2e26639054063ff7bd4025879
 Date:   Thu Mar 10 01:33:28 2016 +0200
 

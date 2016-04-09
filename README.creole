@@ -1,47 +1,62 @@
-trytond_accounting_uk_chart
-===========================
 
-UK accounting chart of accounts for Tryton ERP
-==============================================
+== UK accounting chart of accounts for Tryton ERP ==
 
 This module provides a chart of accounts and taxes.  It requires
 trytond_accounting_uk which provides UK accounting information,
 including foreign exchange rates, but not a chart of accounts.
 
+There's a lot of work still to be done: the deferrals in the
+chart of accounts still need doing, and the chart of taxes needs
+checking carefully; any help is appreciated.
+
+There's a starting point for a Companies House filing of the
+summary of Abbreviated Accounts. Look in account.xml and account.py
+for the code, and abbrev_accts.odt for the template. Right now it's
+just a cut-n-paste of the Trial Balance from Tryton's account module,
+but it serves as a point to wire up an abbreviated accounts report.
+
 
 === UK Charts of Accounts ===
 
+There has never been a UK chart of accounts in Tryton.
+
+The tale of a UK chart of accounts in OpenERP is a long and sad one;
+the OdooDoo version 8 one has not been touched in 5 years, and thinks
+that the VAT rate in the UK is 17.5% - nostalgic :-)
+
+==== Prior Art ====
+
+Many of the companies selling OpenERP services dropped it or went under.
+Here are some of the versions that we have looked at:
+
 Uk Companies:
+
 * http://enapps.co.uk
-  file:///n/data/TrytonOpenERP/tmp/Topics/EnApps
   on github.com/enaps but no CoA - just fstr
 * http://junaricrmplus.com/index.html
-  dropped OpenERP for Sage
+  dropped OpenERP for Sage?
 * http://www.publicus-solutions.com
-  now doing Tryton
+  now doing Tryton?
 * http://www.open-erp.co.uk
   a rebranded smartmode portal? SmartIT
 * http://smartmode.co.uk
-  file:///n/data/TrytonOpenERP/tmp/Topics/SmartMode
   site dead; also dead:
   http://www.smart-ltd.co.uk/applications/open-erp/
 * NetInsight
-  file:///n/data/TrytonOpenERP/tmp/Topics/NetInsight/
+
   
 OpenERP versions:
 * 6.0.4
 * openerp-6.1-20130426-234758
 * openerp-7.0-20140125-002455
-  /n/src/openerp-7.0-20140125-002455/openerp/addons/l10n_uk
   Use this as the starting point
 * Same as above (2014-02-09):
-  /n/data/TrytonOpenERP/net/Http/pypi.python.org/packages/source/o/openerp-l10n-uk/openerp-l10n-uk-7.0.406.tar.gz
+  http://pypi.python.org/packages/source/o/openerp-l10n-uk/openerp-l10n-uk-7.0.406.tar.gz
 
 openerp.com:
 * Smartmode latest Apr 28  2013 (GPL):
-/n/data/TrytonOpenERP/tmp/Topics/SmartMode/apps.openerp.com/addon/get_module_as_zip/5666/l10n_uk_latest.zip
+  http://apps.openerp.com/addon/get_module_as_zip/5666/l10n_uk_latest.zip
 * v6 Nov 25 2012 (GPL):
-/n/data/TrytonOpenERP/tmp/Topics/SmartMode/v6apps.openerp.com/addon/get_module_as_zip/614/l10n_uk.zip
+  http://v6apps.openerp.com/addon/get_module_as_zip/614/l10n_uk.zip
 * v5? Nov 11  2010 (GPL):
 # lp:/~openerp-commiter/openobject-addons/trunk-extra-addons/l10n_chart_uk/
-
