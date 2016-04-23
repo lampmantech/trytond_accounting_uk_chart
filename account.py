@@ -9,7 +9,14 @@ Right now it's just a cut-n-paste of the Trial Balance from Tryton's
 3.6.3 account module, but it serves as a point to wire up an abbreviated
 accounts report.
 
+The code assumes that the major categories of the chart of accounts
+have the sequential codes A000 B000 ... M000 - see sLETTERS.
 """
+
+sLETTERS = 'ABCDEFGHIJKLM'
+
+import sys
+
 from decimal import Decimal
 import datetime
 import operator
@@ -176,23 +183,46 @@ class AbbrevAccts(Report):
                         and account.credit == Decimal('0.0'):
                     to_remove.add(account)
 
-        accounts = []
+        lDAccounts = []
+        dRootNames = {}
+        dRootAccounts = {}
+        for sRoot in list(sLETTERS):
+            report_context[sRoot +'000_' +'accounts'] = []
+            report_context[sRoot +'000_' +'name'] = ""
+            
         for start_account, in_account, end_account in izip(
                 start_accounts, in_accounts, end_accounts):
             if in_account in to_remove:
                 continue
-            accounts.append({
+            sRoot = ''
+            oParent = in_account.parent
+            assert oParent, 'No parent in ' +repr(in_account)
+            while oParent:
+                if oParent.code.endswith('000') and oParent.code[0] in sLETTERS:
+                    sRoot = oParent.code
+                    if sRoot not in dRootNames:
+                        dRootNames[sRoot] = oParent.name
+                        dRootAccounts[sRoot] = []
+                    break
+                oParent = oParent.parent
+            assert sRoot, 'No sRoot in ' +repr(in_account)
+                
+            dVals = {
                     'code': start_account.code,
                     'name': start_account.name,
                     'start_balance': start_account.balance,
                     'debit': in_account.debit,
                     'credit': in_account.credit,
                     'end_balance': end_account.balance,
-                    })
-
+                    'root': sRoot,
+                    'root_name': dRootNames[sRoot],
+                    }
+            lDAccounts.append(dVals)
+            dRootAccounts[sRoot].append(dVals)
+                
         periods = end_periods
 
-        report_context['accounts'] = accounts
+        report_context['accounts'] = lDAccounts
         periods.sort(key=operator.attrgetter('start_date'))
         report_context['start_period'] = periods[0]
         periods.sort(key=operator.attrgetter('end_date'))
@@ -202,6 +232,10 @@ class AbbrevAccts(Report):
         report_context['sum'] = \
             lambda accounts, field: cls.sum(accounts, field)
 
+        for sRoot in dRootNames.keys():
+            report_context[sRoot +'_' +'accounts'] = dRootAccounts[sRoot]
+            report_context[sRoot +'_' +'name'] = dRootNames[sRoot]
+        
         return report_context
 
     @classmethod

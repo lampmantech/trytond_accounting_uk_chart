@@ -60,3 +60,8 @@ openerp.com:
   http://v6apps.openerp.com/addon/get_module_as_zip/614/l10n_uk.zip
 * v5? Nov 11  2010 (GPL):
 # lp:/~openerp-commiter/openobject-addons/trunk-extra-addons/l10n_chart_uk/
+
+----
+Links:
+
+* 
