@@ -5,12 +5,15 @@
 This a starting point for a Companies House filing of the
 summary of Abbreviated Accounts. Look in  abbrev_accts.odt for the template. 
 
-Right now it's just a cut-n-paste of the Trial Balance from Tryton's
-3.6.3 account module, but it serves as a point to wire up an abbreviated
-accounts report.
+It started as a cut-n-paste of the Trial Balance from Tryton's 3.6.3
+account module, but it breaks out the accounts into a summary section,
+a detailed section, and the full list of accounts. The idea is that it
+makes a starting point for you to edit the generated OpenOffice odt
+file to suit your needs for an abbreviated accounts report.
 
 The code assumes that the major categories of the chart of accounts
-have the sequential codes A000 B000 ... M000 - see sLETTERS.
+have the sequential codes A000 B000 ... M000 and that they are the
+sections to be summarized - see sLETTERS.
 """
 
 sLETTERS = 'ABCDEFGHIJKLM'

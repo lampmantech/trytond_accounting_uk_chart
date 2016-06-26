@@ -1,3 +1,8 @@
+commit 2ddcb0a912ef1ee4ad33c68661b5a7e2d1469070
+Date:   Sat Apr 23 19:48:15 2016 +0300
+
+    Improved abbrev_accts.odt
+
 commit b441d52dc48c71fb15f4fa6fbeb0ba8de6abdec8
 Date:   Sat Apr 9 17:15:28 2016 +0300
 

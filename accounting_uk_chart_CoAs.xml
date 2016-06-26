@@ -108,6 +108,7 @@
       <field name="name">Software</field>
       <field name="code">0010</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A010" name="parent"/>
@@ -116,6 +117,7 @@
       <field name="name">Software Depreciation</field>
       <field name="code">0011</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A010" name="parent"/>
@@ -124,6 +126,7 @@
       <field name="name">Patents and Trademarks</field>
       <field name="code">0020</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A010" name="parent"/>
@@ -132,6 +135,7 @@
       <field name="name">Patents and Trademarks Depreciation</field>
       <field name="code">0021</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A010" name="parent"/>
@@ -147,6 +151,7 @@
       <field name="name">Fixtures and fittings</field>
       <field name="code">0030</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -155,6 +160,7 @@
       <field name="name">Fixtures and fittings Depreciation</field>
       <field name="code">0031</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -163,6 +169,7 @@
       <field name="name">Land and buildings</field>
       <field name="code">0040</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -171,6 +178,7 @@
       <field name="name">Land and buildings Depreciation</field>
       <field name="code">0041</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -179,6 +187,7 @@
       <field name="name">Motor vehicles</field>
       <field name="code">0050</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -187,6 +196,7 @@
       <field name="name">Motor vehicles Depreciation</field>
       <field name="code">0051</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -195,6 +205,7 @@
       <field name="name">Office equipment</field>
       <field name="code">0060</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -203,6 +214,7 @@
       <field name="name">Office equipment Depreciation</field>
       <field name="code">0061</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -211,6 +223,7 @@
       <field name="name">Plant and machinery</field>
       <field name="code">0070</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -219,6 +232,7 @@
       <field name="name">Plant and machinery Depreciation</field>
       <field name="code">0071</field>
       <field ref="account_type_fixed_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A020" name="parent"/>
@@ -248,6 +262,7 @@
       <field name="name">Stock</field>
       <field name="code">1001</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -256,6 +271,7 @@
       <field name="name">Work in Progress</field>
       <field name="code">1002</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -264,6 +280,7 @@
       <field name="name">Finished Goods</field>
       <field name="code">1003</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -272,6 +289,7 @@
       <field name="name">Goods in Transit</field>
       <field name="code">1004</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -280,6 +298,7 @@
       <field name="name">Stock Au Coins</field>
       <field name="code">1026</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -288,6 +307,7 @@
       <field name="name">Stock Ag Coins</field>
       <field name="code">1027</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -296,6 +316,7 @@
       <field name="name">Stock Pt Coins</field>
       <field name="code">1028</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -304,6 +325,7 @@
       <field name="name">Stock Au G@BV</field>
       <field name="code">1036</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -312,6 +334,7 @@
       <field name="name">Stock Ag Kg@BV</field>
       <field name="code">1037</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -320,6 +343,7 @@
       <field name="name">Stock Pt G@BV</field>
       <field name="code">1038</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -328,6 +352,7 @@
       <field name="name">Stock Au 1 oz.</field>
       <field name="code">1046</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -336,6 +361,7 @@
       <field name="name">Stock Ag 1 oz.</field>
       <field name="code">1047</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -344,6 +370,7 @@
       <field name="name">Stock Pt 1 oz.</field>
       <field name="code">1048</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">stock</field>
       <field name="reconcile" eval="True"/>
       <field ref="B010" name="parent"/>
@@ -375,6 +402,7 @@
       <field name="name">Other Debtors</field>
       <field name="code">1102</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B020" name="parent"/>
@@ -383,6 +411,7 @@
       <field name="name">Bank Transfers</field>
       <field name="code">1110</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B020" name="parent"/>
@@ -405,6 +434,7 @@
       <field name="name">Bank Accounts</field>
       <field name="code">1200</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -413,6 +443,7 @@
       <field name="name">Long term Asset GBP</field>
       <field name="code">1226</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -421,6 +452,7 @@
       <field name="name">Long term Asset EUR</field>
       <field name="code">1227</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -429,6 +461,7 @@
       <field name="name">Long term Asset USD</field>
       <field name="code">1228</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -437,6 +470,7 @@
       <field name="name">Long term Asset CAD</field>
       <field name="code">1229</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -445,6 +479,7 @@
       <field name="name">Directors Loan GBP</field>
       <field name="code">1230</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -453,6 +488,7 @@
       <field name="name">Directors Loan EUR</field>
       <field name="code">1231</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -461,6 +497,7 @@
       <field name="name">Directors Loan USD</field>
       <field name="code">1232</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -469,6 +506,7 @@
       <field name="name">Petty Cash GBP</field>
       <field name="code">1233</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -477,6 +515,7 @@
       <field name="name">Petty Cash EUR</field>
       <field name="code">1234</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -485,6 +524,7 @@
       <field name="name">Petty Cash USD</field>
       <field name="code">1235</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -493,6 +533,7 @@
       <field name="name">Petty Cash CAD</field>
       <field name="code">1236</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -501,6 +542,7 @@
       <field name="name">Company Credit Card GBP</field>
       <field name="code">1240</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -509,6 +551,7 @@
       <field name="name">Company Credit Card EUR</field>
       <field name="code">1241</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -517,6 +560,7 @@
       <field name="name">Company Credit Card USD</field>
       <field name="code">1242</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -525,6 +569,7 @@
       <field name="name">Company Credit Card CAD</field>
       <field name="code">1243</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B040" name="parent"/>
@@ -540,6 +585,7 @@
       <field name="name">Prepayments</field>
       <field name="code">1103</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="B050" name="parent"/>
@@ -578,6 +624,7 @@
       <field name="name">Other Creditors</field>
       <field name="code">2102</field>
       <field ref="account_type_current_liabilities" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="C010" name="parent"/>
@@ -586,6 +633,7 @@
       <field name="name">Sales Tax Control Account</field>
       <field name="code">2200</field>
       <field ref="account_type_output_tax" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="C010" name="parent"/>
@@ -594,6 +642,7 @@
       <field name="name">Purchase Tax Control Account</field>
       <field name="code">2201</field>
       <field ref="account_type_input_tax" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="C010" name="parent"/>
@@ -610,6 +659,7 @@
       <field name="name">Manual Adjustments - VAT</field>
       <field name="code">2204</field>
       <field ref="account_type_current_liabilities" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="C010" name="parent"/>
@@ -649,6 +699,7 @@
       <field name="name">Bad debt provision</field>
       <field name="code">2150</field>
       <field ref="account_type_current_liabilities" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="C020" name="parent"/>
@@ -664,6 +715,7 @@
       <field name="name">Accruals</field>
       <field name="code">2109</field>
       <field ref="account_type_current_liabilities" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="C030" name="parent"/>
@@ -694,6 +746,7 @@
       <field name="name">Loans</field>
       <field name="code">2300</field>
       <field ref="account_type_current_liabilities" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="D010" name="parent"/>
@@ -702,6 +755,7 @@
       <field name="name">Hire Purchase</field>
       <field name="code">2310</field>
       <field ref="account_type_current_liabilities" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="D010" name="parent"/>
@@ -710,6 +764,7 @@
       <field name="name">Mortgages</field>
       <field name="code">2330</field>
       <field ref="account_type_current_liabilities" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="D010" name="parent"/>
@@ -732,6 +787,7 @@
       <field name="name">Ordinary Shares</field>
       <field name="code">3001</field>
       <field ref="account_type_equity" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="3000" name="parent"/>
@@ -740,6 +796,7 @@
       <field name="name">Preference Shares</field>
       <field name="code">3002</field>
       <field ref="account_type_equity" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="3000" name="parent"/>
@@ -748,6 +805,7 @@
       <field name="name">Share premium account</field>
       <field name="code">3010</field>
       <field ref="account_type_equity" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="E000" name="parent"/>
@@ -756,6 +814,7 @@
       <field name="name">Revaluation reserve</field>
       <field name="code">3020</field>
       <field ref="account_type_equity" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="E000" name="parent"/>
@@ -764,6 +823,7 @@
       <field name="name">Dividend reserves</field>
       <field name="code">3030</field>
       <field ref="account_type_equity" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="E000" name="parent"/>
@@ -772,6 +832,7 @@
       <field name="name">Profit and loss account</field>
       <field name="code">3200</field>
       <field ref="account_type_profit_and_loss" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="E000" name="parent"/>
@@ -808,14 +869,15 @@
       <field name="name">Transfer to Profit and loss account</field>
       <field name="code">4200</field>
       <field ref="account_type_profit_and_loss" name="type"/>
-      <field name="kind">other</field>
+      <field name="kind">other</field>      
       <field name="reconcile" eval="True"/>
       <field ref="F000" name="parent"/>
     </record>
     <record model="account.account.template" id="4010">
       <field name="name">Sales of Software</field>
       <field name="code">4010</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4000" name="parent"/>
@@ -823,7 +885,8 @@
     <record model="account.account.template" id="4011">
       <field name="name">Sales of Shares</field>
       <field name="code">4011</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4000" name="parent"/>
@@ -831,7 +894,8 @@
     <record model="account.account.template" id="4012">
       <field name="name">Sales of Other equipment</field>
       <field name="code">4012</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4000" name="parent"/>
@@ -839,7 +903,8 @@
     <record model="account.account.template" id="4013">
       <field name="name">Sales of Goods</field>
       <field name="code">4013</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4000" name="parent"/>
@@ -847,7 +912,8 @@
     <record model="account.account.template" id="4014">
       <field name="name">Sales of Consumables</field>
       <field name="code">4014</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4000" name="parent"/>
@@ -855,7 +921,8 @@
     <record model="account.account.template" id="4015">
       <field name="name">Sales Income GBP</field>
       <field name="code">4015</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4000" name="parent"/>
@@ -863,7 +930,8 @@
     <record model="account.account.template" id="4016">
       <field name="name">Sales Income EUR</field>
       <field name="code">4016</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4000" name="parent"/>
@@ -871,7 +939,8 @@
     <record model="account.account.template" id="4017">
       <field name="name">Sales Income USD</field>
       <field name="code">4017</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4100" name="parent"/>
@@ -879,7 +948,8 @@
     <record model="account.account.template" id="4018">
       <field name="name">Sales Income CAD</field>
       <field name="code">4018</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4100" name="parent"/>
@@ -887,10 +957,20 @@
     <record model="account.account.template" id="4020">
       <field name="name">Sales of Subcontractor Reimbursements</field>
       <field name="code">4020</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="4100" name="parent"/>
+    </record>
+    <record model="account.account.template" id="4710">
+      <field name="name">Other sundry revenue</field>
+      <field name="code">4710</field>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
+      <field name="kind">revenue</field>
+      <field name="reconcile" eval="True"/>
+      <field ref="4000" name="parent"/>
     </record>
     <record model="account.account.template" id="G000">
       <field name="name">Cost of sales</field>
@@ -910,6 +990,7 @@
       <field name="name">Cost of sales GBP</field>
       <field name="code">5001</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="G000" name="parent"/>
@@ -918,6 +999,7 @@
       <field name="name">Cost of sales EUR</field>
       <field name="code">5002</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="G000" name="parent"/>
@@ -926,6 +1008,7 @@
       <field name="name">Cost of sales USD</field>
       <field name="code">5003</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="G000" name="parent"/>
@@ -934,6 +1017,7 @@
       <field name="name">Cost of sales CAD</field>
       <field name="code">5004</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="G000" name="parent"/>
@@ -942,6 +1026,7 @@
       <field name="name">Sales of Software costs</field>
       <field name="code">5010</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="5000" name="parent"/>
@@ -950,6 +1035,7 @@
       <field name="name">Sales of Computers costs</field>
       <field name="code">5011</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="5000" name="parent"/>
@@ -958,6 +1044,7 @@
       <field name="name">Sales of Other equipment costs</field>
       <field name="code">5012</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="5000" name="parent"/>
@@ -966,6 +1053,7 @@
       <field name="name">Costs of Goods Sold</field>
       <field name="code">5013</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="5000" name="parent"/>
@@ -974,6 +1062,7 @@
       <field name="name">Sales of Consumables costs</field>
       <field name="code">5014</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="5000" name="parent"/>
@@ -982,6 +1071,7 @@
       <field name="name">Sales of Software Services costs</field>
       <field name="code">5017</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="5000" name="parent"/>
@@ -990,6 +1080,7 @@
       <field name="name">Sales of Subcontractor Services costs</field>
       <field name="code">5020</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="5000" name="parent"/>
@@ -998,6 +1089,7 @@
       <field name="name">Installation costs</field>
       <field name="code">5050</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="5000" name="parent"/>
@@ -1020,6 +1112,7 @@
       <field name="name">Marketing</field>
       <field name="code">6000</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="H010" name="parent"/>
@@ -1028,6 +1121,7 @@
       <field name="name">Exhibitions and events</field>
       <field name="code">6001</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="H010" name="parent"/>
@@ -1036,6 +1130,7 @@
       <field name="name">Public Relations</field>
       <field name="code">6002</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="H010" name="parent"/>
@@ -1044,6 +1139,7 @@
       <field name="name">Distribution vehicles</field>
       <field name="code">6010</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="H000" name="parent"/>
@@ -1052,6 +1148,7 @@
       <field name="name">Distribution salaries and wages</field>
       <field name="code">6020</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="H000" name="parent"/>
@@ -1060,6 +1157,7 @@
       <field name="name">Shipping</field>
       <field name="code">6030</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="H000" name="parent"/>
@@ -1082,6 +1180,7 @@
       <field name="name">Directors pension</field>
       <field name="code">7000</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I010" name="parent"/>
@@ -1090,6 +1189,7 @@
       <field name="name">Directors remuneration</field>
       <field name="code">7001</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I010" name="parent"/>
@@ -1098,6 +1198,7 @@
       <field name="name">Admin gross salaries</field>
       <field name="code">7010</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I010" name="parent"/>
@@ -1106,6 +1207,7 @@
       <field name="name">Management gross salaries</field>
       <field name="code">7011</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I010" name="parent"/>
@@ -1114,6 +1216,7 @@
       <field name="name">Employers NIC</field>
       <field name="code">7012</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I010" name="parent"/>
@@ -1122,6 +1225,7 @@
       <field name="name">Subcontractors payments</field>
       <field name="code">7020</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I010" name="parent"/>
@@ -1137,6 +1241,7 @@
       <field name="name">Consultancy</field>
       <field name="code">7610</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I020" name="parent"/>
@@ -1145,6 +1250,7 @@
       <field name="name">Legal and professional charges</field>
       <field name="code">7620</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I020" name="parent"/>
@@ -1160,6 +1266,7 @@
       <field name="name">Legal Fees</field>
       <field name="code">7600</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I025" name="parent"/>
@@ -1168,6 +1275,7 @@
       <field name="name">Accounting</field>
       <field name="code">7601</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I025" name="parent"/>
@@ -1176,6 +1284,7 @@
       <field name="name">Consultancy Fees</field>
       <field name="code">7602</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I025" name="parent"/>
@@ -1184,6 +1293,7 @@
       <field name="name">Professional Fees</field>
       <field name="code">7603</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I025" name="parent"/>
@@ -1192,6 +1302,7 @@
       <field name="name">Investor Monitoring Fees</field>
       <field name="code">7605</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I025" name="parent"/>
@@ -1207,6 +1318,7 @@
       <field name="name">Light heat and power</field>
       <field name="code">7110</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I030" name="parent"/>
@@ -1215,6 +1327,7 @@
       <field name="name">Rent and rates</field>
       <field name="code">7100</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I030" name="parent"/>
@@ -1223,6 +1336,7 @@
       <field name="name">Repairs renewals and maintenance</field>
       <field name="code">7120</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I030" name="parent"/>
@@ -1231,6 +1345,7 @@
       <field name="name">Storage and Safe Deposit</field>
       <field name="code">7130</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I030" name="parent"/>
@@ -1246,6 +1361,7 @@
       <field name="name">Car hire</field>
       <field name="code">7300</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I040" name="parent"/>
@@ -1254,6 +1370,7 @@
       <field name="name">Car fuel</field>
       <field name="code">7301</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I040" name="parent"/>
@@ -1262,6 +1379,7 @@
       <field name="name">Car maintenance</field>
       <field name="code">7302</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I040" name="parent"/>
@@ -1284,6 +1402,7 @@
       <field name="name">Travel UK</field>
       <field name="code">7400</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I051" name="parent"/>
@@ -1292,6 +1411,7 @@
       <field name="name">Travel CY</field>
       <field name="code">7401</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I051" name="parent"/>
@@ -1300,6 +1420,7 @@
       <field name="name">Travel EU</field>
       <field name="code">7402</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I051" name="parent"/>
@@ -1308,6 +1429,7 @@
       <field name="name">Travel World</field>
       <field name="code">7403</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I051" name="parent"/>
@@ -1316,6 +1438,7 @@
       <field name="name">Subsistence UK</field>
       <field name="code">7404</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I051" name="parent"/>
@@ -1324,6 +1447,7 @@
       <field name="name">Subsistence CY</field>
       <field name="code">7405</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I051" name="parent"/>
@@ -1332,6 +1456,7 @@
       <field name="name">Subsistence EU</field>
       <field name="code">7406</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I051" name="parent"/>
@@ -1340,6 +1465,7 @@
       <field name="name">Subsistence World</field>
       <field name="code">7407</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I051" name="parent"/>
@@ -1355,6 +1481,7 @@
       <field name="name">Entertainment UK</field>
       <field name="code">7410</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I052" name="parent"/>
@@ -1363,6 +1490,7 @@
       <field name="name">Entertainment CY</field>
       <field name="code">7411</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I052" name="parent"/>
@@ -1371,6 +1499,7 @@
       <field name="name">Entertainment EU</field>
       <field name="code">7412</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I052" name="parent"/>
@@ -1379,6 +1508,7 @@
       <field name="name">Entertainment World</field>
       <field name="code">7413</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I052" name="parent"/>
@@ -1387,6 +1517,7 @@
       <field name="name">Printing Postage</field>
       <field name="code">7500</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1395,6 +1526,7 @@
       <field name="name">Telephone lines</field>
       <field name="code">7501</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1403,6 +1535,7 @@
       <field name="name">Internet and hosting</field>
       <field name="code">7502</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1411,6 +1544,7 @@
       <field name="name">Mobiles</field>
       <field name="code">7503</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1419,6 +1553,7 @@
       <field name="name">Stationery</field>
       <field name="code">7504</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1427,6 +1562,7 @@
       <field name="name">Books</field>
       <field name="code">7505</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1435,6 +1571,7 @@
       <field name="name">Office consumables</field>
       <field name="code">7506</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1443,6 +1580,7 @@
       <field name="name">Computer Maintenance</field>
       <field name="code">7507</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1451,6 +1589,7 @@
       <field name="name">Courier Shipping</field>
       <field name="code">7508</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1459,6 +1598,7 @@
       <field name="name">Storage</field>
       <field name="code">7509</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1467,6 +1607,7 @@
       <field name="name">Software expenses</field>
       <field name="code">7510</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1475,6 +1616,7 @@
       <field name="name">Other computer costs</field>
       <field name="code">7511</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1483,6 +1625,7 @@
       <field name="name">Recruitment fees</field>
       <field name="code">7512</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1491,6 +1634,7 @@
       <field name="name">Other admin expenses</field>
       <field name="code">7513</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I050" name="parent"/>
@@ -1506,6 +1650,7 @@
       <field name="name">Exchange gains or losses</field>
       <field name="code">7700</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I060" name="parent"/>
@@ -1514,6 +1659,7 @@
       <field name="name">Other sundry expenses</field>
       <field name="code">7710</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I060" name="parent"/>
@@ -1522,6 +1668,7 @@
       <field name="name">Bad debts</field>
       <field name="code">7850</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I060" name="parent"/>
@@ -1530,6 +1677,7 @@
       <field name="name">Bank credit card and other financial charges</field>
       <field name="code">7910</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I060" name="parent"/>
@@ -1545,6 +1693,7 @@
       <field name="name">Intangible assets depn</field>
       <field name="code">8000</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I070" name="parent"/>
@@ -1553,6 +1702,7 @@
       <field name="name">Tangible assets depn</field>
       <field name="code">8001</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I070" name="parent"/>
@@ -1561,6 +1711,7 @@
       <field name="name">Donations</field>
       <field name="code">8200</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I060" name="parent"/>
@@ -1569,6 +1720,7 @@
       <field name="name">Entertaining</field>
       <field name="code">8300</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I060" name="parent"/>
@@ -1577,6 +1729,7 @@
       <field name="name">Insurance</field>
       <field name="code">8400</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="I060" name="parent"/>
@@ -1591,7 +1744,8 @@
     <record model="account.account.template" id="9000">
       <field name="name">Profits or Losses on disposals of assets</field>
       <field name="code">9000</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="J000" name="parent"/>
@@ -1606,7 +1760,8 @@
     <record model="account.account.template" id="4900">
       <field name="name">Bank Interest received</field>
       <field name="code">4900</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="K000" name="parent"/>
@@ -1614,7 +1769,8 @@
     <record model="account.account.template" id="4910">
       <field name="name">Investment Interest received</field>
       <field name="code">4910</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="K000" name="parent"/>
@@ -1622,7 +1778,8 @@
     <record model="account.account.template" id="4920">
       <field name="name">Investment Dividends received</field>
       <field name="code">4920</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="K000" name="parent"/>
@@ -1638,6 +1795,7 @@
       <field name="name">Interest paid</field>
       <field name="code">7900</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="L000" name="parent"/>
@@ -1646,6 +1804,7 @@
       <field name="name">Loan Interest</field>
       <field name="code">7904</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="L000" name="parent"/>
@@ -1654,6 +1813,7 @@
       <field name="name">Credit Charges</field>
       <field name="code">7905</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="L000" name="parent"/>
@@ -1662,6 +1822,7 @@
       <field name="name">Commodity Price Losses (BV)</field>
       <field name="code">7906</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="L000" name="parent"/>
@@ -1670,6 +1831,7 @@
       <field name="name">Exchange Rate Losses (Alpari)</field>
       <field name="code">7907</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="L000" name="parent"/>
@@ -1678,6 +1840,7 @@
       <field name="name">Reimbursable Expenses</field>
       <field name="code">7909</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="L000" name="parent"/>
@@ -1686,6 +1849,7 @@
       <field name="name">Miscellaneous</field>
       <field name="code">8500</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="L000" name="parent"/>
@@ -1701,6 +1865,7 @@
       <field name="name">Corporation tax expense</field>
       <field name="code">8800</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="M000" name="parent"/>
@@ -1708,7 +1873,8 @@
     <record model="account.account.template" id="8801">
       <field name="name">Corporation tax refund</field>
       <field name="code">8801</field>
-      <field ref="account_type_income" name="type"/>
+      <field name="type" ref="account_type_income"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">revenue</field>
       <field name="reconcile" eval="True"/>
       <field ref="M000" name="parent"/>
@@ -1717,6 +1883,7 @@
       <field name="name">Fines and Penalties</field>
       <field name="code">8900</field>
       <field ref="account_type_expense" name="type"/>
+      <field name="deferral" eval="False"/>
       <field name="kind">expense</field>
       <field name="reconcile" eval="True"/>
       <field ref="M000" name="parent"/>
@@ -1741,6 +1908,7 @@
       <field name="name">Suspense Account</field>
       <field name="code">9998</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A000" name="parent"/>
@@ -1749,6 +1917,7 @@
       <field name="name">Mispostings Account</field>
       <field name="code">9999</field>
       <field ref="account_type_current_assets" name="type"/>
+      <field name="deferral" eval="True"/>
       <field name="kind">other</field>
       <field name="reconcile" eval="True"/>
       <field ref="A000" name="parent"/>
